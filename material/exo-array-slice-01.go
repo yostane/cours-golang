@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"time"
 )
 
 // Générer un tableau de 20 entiers aléatoires
@@ -13,6 +14,9 @@ import (
 // Slice: c'est comme un tableau, sauf qu'on peut réduire le nombre d'éléments ou l'augmenter tant qu'on ne dépasse pas la capacité max
 
 func main() {
+	// C'est une donnée qui permet de calculer le premier terme dans la suite numérique des nombres pseudo-aléatoires
+	rand.Seed(time.Now().UnixNano())
+
 	randomNumbers := [20]int{}
 	// Initialisation du tableau de nombres aléatoires
 	for idx, _ := range randomNumbers {

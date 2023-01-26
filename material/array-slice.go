@@ -38,6 +38,6 @@ func showSliceExamples() {
 }
 
 func main() {
-	ShowArrayExamples()
+	showArrayExamples()
 	showSliceExamples()
 }
